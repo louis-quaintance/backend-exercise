@@ -1,0 +1,49 @@
+{
+  "name": "converge-backend-exercise",
+  "version": "0.2.1",
+  "description": "Engineering exercise for full-stack candidates.",
+  "main": "main.js",
+  "keywords": [
+    "test",
+    "interview",
+    "exercise",
+    "full-stack",
+    "http-server"
+  ],
+  "scripts": {
+    "start": "node main.js",
+    "unit": "tape 'src/**/*.spec.js' | tap-spec",
+    "integration": "tape 'test/integration/**/*.spec.js' | tap-spec",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "all": "npm run lint && npm run unit && npm run integration"
+  },
+  "author": "Gideon Farrell <gideon@converge.io>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "escope": "3.6.0",
+    "eslint": "7.5.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "proxyquire": "2.1.3",
+    "sinon": "8.1.1",
+    "supertest": "4.0.2",
+    "tap-spec": "5.0.0",
+    "tape": "5.0.1"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "dotenv": "8.2.0",
+    "envalid": "6.0.0",
+    "express": "4.17.1",
+    "helmet": "3.23.3",
+    "joi": "17.1.1",
+    "moment": "^2.27.0",
+    "ramda": "^0.27.0",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "sqlite": "^4.0.12",
+    "sqlite3": "^5.0.0",
+    "timekeeper": "^2.2.0"
+  }
+}
